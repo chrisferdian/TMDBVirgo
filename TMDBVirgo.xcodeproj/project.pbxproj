@@ -22,6 +22,8 @@
 		3ABB0B65283294E200C187D2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B64283294E200C187D2 /* HomeCoordinator.swift */; };
 		3ABB0B692832963700C187D2 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B682832963700C187D2 /* AccountViewController.swift */; };
 		3ABB0B6B2832965100C187D2 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B6A2832965100C187D2 /* AccountCoordinator.swift */; };
+		3ABB0B6D2832993C00C187D2 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B6C2832993C00C187D2 /* UIButton+Extensions.swift */; };
+		3ABB0B6F28329B5600C187D2 /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B6E28329B5600C187D2 /* UIControl+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		3ABB0B64283294E200C187D2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		3ABB0B682832963700C187D2 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3ABB0B6A2832965100C187D2 /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		3ABB0B6C2832993C00C187D2 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		3ABB0B6E28329B5600C187D2 /* UIControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				3ABB0B572831FB0A00C187D2 /* UIViewConstraint.swift */,
+				3ABB0B6C2832993C00C187D2 /* UIButton+Extensions.swift */,
+				3ABB0B6E28329B5600C187D2 /* UIControl+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ABB0B5C283208BF00C187D2 /* MainViewController.swift in Sources */,
+				3ABB0B6D2832993C00C187D2 /* UIButton+Extensions.swift in Sources */,
 				3ABB0B532831F63000C187D2 /* Coordinator.swift in Sources */,
 				3ABB0B692832963700C187D2 /* AccountViewController.swift in Sources */,
 				3ABB0B422831DB3200C187D2 /* SplashViewController.swift in Sources */,
@@ -223,6 +230,7 @@
 				3ABB0B402831DB3200C187D2 /* SceneDelegate.swift in Sources */,
 				3ABB0B61283238B800C187D2 /* MainCoordinator.swift in Sources */,
 				3ABB0B582831FB0A00C187D2 /* UIViewConstraint.swift in Sources */,
+				3ABB0B6F28329B5600C187D2 /* UIControl+Extensions.swift in Sources */,
 				3ABB0B63283238DC00C187D2 /* TabBarPage.swift in Sources */,
 				3ABB0B65283294E200C187D2 /* HomeCoordinator.swift in Sources */,
 			);

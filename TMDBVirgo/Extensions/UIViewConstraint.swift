@@ -1027,6 +1027,16 @@ extension UIView {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = background
     }
+    
+    func setCorner(radius: CGFloat) {
+        layer.cornerRadius = radius
+        clipsToBounds = true
+    }
+    
+    func setBorder(width: CGFloat, color: UIColor) {
+        layer.borderColor = color.cgColor
+        layer.borderWidth = width
+    }
 }
 
 extension UIImageView {
