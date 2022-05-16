@@ -16,7 +16,17 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController: ViewController = ViewController()
+        let viewController: SplashViewController = SplashViewController()
+        viewController.delegate = self
         self.navigationController.viewControllers = [viewController]
+    }
+}
+
+extension AppCoordinator: SplashViewControllerDelegate {
+    func navigateToMainScreen() {
+        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            let controller: _DummMainVC = _DummMainVC()
+            self.navigationController.viewControllers = [controller]
+        }
     }
 }
