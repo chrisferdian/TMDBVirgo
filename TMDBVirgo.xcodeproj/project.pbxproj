@@ -16,6 +16,9 @@
 		3ABB0B552831F66F00C187D2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B542831F66F00C187D2 /* AppCoordinator.swift */; };
 		3ABB0B582831FB0A00C187D2 /* UIViewConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B572831FB0A00C187D2 /* UIViewConstraint.swift */; };
 		3ABB0B5C283208BF00C187D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B5B283208BF00C187D2 /* MainViewController.swift */; };
+		3ABB0B5F28320AB400C187D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B5E28320AB400C187D2 /* HomeViewController.swift */; };
+		3ABB0B61283238B800C187D2 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B60283238B800C187D2 /* MainCoordinator.swift */; };
+		3ABB0B63283238DC00C187D2 /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B62283238DC00C187D2 /* TabBarPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		3ABB0B542831F66F00C187D2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3ABB0B572831FB0A00C187D2 /* UIViewConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewConstraint.swift; sourceTree = "<group>"; };
 		3ABB0B5B283208BF00C187D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3ABB0B5E28320AB400C187D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3ABB0B60283238B800C187D2 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		3ABB0B62283238DC00C187D2 /* TabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 		3ABB0B59283208AC00C187D2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3ABB0B5D28320A7900C187D2 /* Home */,
 				3ABB0B5A283208B200C187D2 /* Main */,
 			);
 			path = Modules;
@@ -104,8 +111,18 @@
 			isa = PBXGroup;
 			children = (
 				3ABB0B5B283208BF00C187D2 /* MainViewController.swift */,
+				3ABB0B60283238B800C187D2 /* MainCoordinator.swift */,
+				3ABB0B62283238DC00C187D2 /* TabBarPage.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		3ABB0B5D28320A7900C187D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3ABB0B5E28320AB400C187D2 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,10 +198,13 @@
 				3ABB0B5C283208BF00C187D2 /* MainViewController.swift in Sources */,
 				3ABB0B532831F63000C187D2 /* Coordinator.swift in Sources */,
 				3ABB0B422831DB3200C187D2 /* SplashViewController.swift in Sources */,
+				3ABB0B5F28320AB400C187D2 /* HomeViewController.swift in Sources */,
 				3ABB0B552831F66F00C187D2 /* AppCoordinator.swift in Sources */,
 				3ABB0B3E2831DB3200C187D2 /* AppDelegate.swift in Sources */,
 				3ABB0B402831DB3200C187D2 /* SceneDelegate.swift in Sources */,
+				3ABB0B61283238B800C187D2 /* MainCoordinator.swift in Sources */,
 				3ABB0B582831FB0A00C187D2 /* UIViewConstraint.swift in Sources */,
+				3ABB0B63283238DC00C187D2 /* TabBarPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

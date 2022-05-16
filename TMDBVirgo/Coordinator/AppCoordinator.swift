@@ -25,8 +25,9 @@ class AppCoordinator: Coordinator {
 extension AppCoordinator: SplashViewControllerDelegate {
     func navigateToMainScreen() {
         DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-            let controller: MainViewController = MainViewController()
-            self.navigationController.viewControllers = [controller]
+            let tabCoordinator = MainCoordinator(navigationController: self.navigationController)
+            tabCoordinator.start()
+            self.childCoordinators.append(tabCoordinator)
         }
     }
 }
