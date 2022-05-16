@@ -63,10 +63,9 @@ class MainCoordinator: NSObject, Coordinator {
                                                      tag: page.pageOrderNumber())
         switch page {
         case .home:
-            let homeVC = HomeViewController()
-            homeVC.title = page.pageTitleValue()
-            homeVC.tabBarItem.selectedImage = page.selectedIcon()
-            navController.pushViewController(homeVC, animated: true)
+            let homeCoordinator = HomeCoordinator(navigationController: navController)
+            homeCoordinator.page = page
+            homeCoordinator.start()
         case .account:
             let accountVC = AccountViewController()
             accountVC.title = page.pageTitleValue()
