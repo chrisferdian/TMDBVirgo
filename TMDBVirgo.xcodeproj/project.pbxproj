@@ -15,6 +15,7 @@
 		3ABB0B532831F63000C187D2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B522831F63000C187D2 /* Coordinator.swift */; };
 		3ABB0B552831F66F00C187D2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B542831F66F00C187D2 /* AppCoordinator.swift */; };
 		3ABB0B582831FB0A00C187D2 /* UIViewConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B572831FB0A00C187D2 /* UIViewConstraint.swift */; };
+		3ABB0B5C283208BF00C187D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B5B283208BF00C187D2 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3ABB0B522831F63000C187D2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		3ABB0B542831F66F00C187D2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3ABB0B572831FB0A00C187D2 /* UIViewConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewConstraint.swift; sourceTree = "<group>"; };
+		3ABB0B5B283208BF00C187D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		3ABB0B3C2831DB3200C187D2 /* TMDBVirgo */ = {
 			isa = PBXGroup;
 			children = (
+				3ABB0B59283208AC00C187D2 /* Modules */,
 				3ABB0B562831FAF700C187D2 /* Extensions */,
 				3ABB0B512831F61E00C187D2 /* Coordinator */,
 				3ABB0B3D2831DB3200C187D2 /* AppDelegate.swift */,
@@ -87,6 +90,22 @@
 				3ABB0B572831FB0A00C187D2 /* UIViewConstraint.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3ABB0B59283208AC00C187D2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3ABB0B5A283208B200C187D2 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3ABB0B5A283208B200C187D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3ABB0B5B283208BF00C187D2 /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABB0B5C283208BF00C187D2 /* MainViewController.swift in Sources */,
 				3ABB0B532831F63000C187D2 /* Coordinator.swift in Sources */,
 				3ABB0B422831DB3200C187D2 /* SplashViewController.swift in Sources */,
 				3ABB0B552831F66F00C187D2 /* AppCoordinator.swift in Sources */,

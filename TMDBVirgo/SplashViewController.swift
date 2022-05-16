@@ -46,11 +46,3 @@ class SplashViewController: UIViewController {
         self.delegate?.navigateToMainScreen()
     }
 }
-
-class _DummMainVC: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.5647058824, green: 0.8078431373, blue: 0.631372549, alpha: 1)
-    }
-}
