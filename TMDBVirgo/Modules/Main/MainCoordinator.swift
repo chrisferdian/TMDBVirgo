@@ -67,10 +67,9 @@ class MainCoordinator: NSObject, Coordinator {
             homeCoordinator.page = page
             homeCoordinator.start()
         case .account:
-            let accountVC = AccountViewController()
-            accountVC.title = page.pageTitleValue()
-            accountVC.tabBarItem.selectedImage = page.selectedIcon()
-            navController.pushViewController(accountVC, animated: true)
+            let accountCoordinator = AccountCoordinator(navigationController: navController)
+            accountCoordinator.page = page
+            accountCoordinator.start()
         }
         return navController
     }
