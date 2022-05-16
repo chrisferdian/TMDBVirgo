@@ -1004,3 +1004,45 @@ extension UIView {
         return constraint
     }
 }
+
+extension UILabel {
+    convenience init(text: String? = nil,
+                     font: UIFont = .systemFont(ofSize: 15),
+                     color: UIColor? = .black,
+                     numberOfLines: Int = 1,
+                     alignment: NSTextAlignment = .left) {
+        self.init()
+        translatesAutoresizingMaskIntoConstraints = false
+        self.font = font
+        textColor = color
+        self.text = text
+        self.numberOfLines = numberOfLines
+        textAlignment = alignment
+    }
+}
+
+extension UIView {
+    convenience init(background: UIColor?) {
+        self.init()
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = background
+    }
+}
+
+extension UIImageView {
+    convenience init(image: UIImage? = nil,
+                     contentMode: UIView.ContentMode = .scaleAspectFit) {
+        self.init()
+        translatesAutoresizingMaskIntoConstraints = false
+        self.contentMode = contentMode
+        clipsToBounds = true
+    }
+    convenience init(imageName: String,
+                     contentMode: UIView.ContentMode = .scaleAspectFit) {
+        let image = UIImage(named: imageName)
+        self.init(image: image)
+        self.contentMode = contentMode
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+
+}

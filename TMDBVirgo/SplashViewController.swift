@@ -11,6 +11,13 @@ protocol SplashViewControllerDelegate: AnyObject {
 }
 class SplashViewController: UIViewController {
 
+    lazy private var labelGuest = UILabel(
+        text: "Guest",
+        font: .systemFont(ofSize: 14, weight: .regular),
+        color: .black,
+        numberOfLines: 1,
+        alignment: .center
+    )
     lazy var imageViewLogo = UIImageView(image: #imageLiteral(resourceName: "tmdb_blue_short"))
     weak var delegate: SplashViewControllerDelegate?
     
@@ -18,6 +25,7 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         setupImageView()
+        setupLabelGuest()
         prepareToMainScreen()
     }
 
@@ -26,6 +34,12 @@ class SplashViewController: UIViewController {
         imageViewLogo.translatesAutoresizingMaskIntoConstraints = false
         imageViewLogo.centerXToSuperview()
         imageViewLogo.centerYToSuperview()
+    }
+    
+    private func setupLabelGuest() {
+        view.addSubview(labelGuest)
+        labelGuest.top(toAnchor: imageViewLogo.bottomAnchor, space: 64)
+        labelGuest.centerXToSuperview()
     }
     
     private func prepareToMainScreen() {
