@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A23137C2836748B0035E342 /* HomeContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23137B2836748B0035E342 /* HomeContentViewModel.swift */; };
+		3A23137E283674AE0035E342 /* HomeContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23137D283674AE0035E342 /* HomeContentModel.swift */; };
+		3A2313812836752C0035E342 /* TMDBResonse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2313802836752C0035E342 /* TMDBResonse.swift */; };
+		3A231383283675490035E342 /* TMDBResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A231382283675490035E342 /* TMDBResult.swift */; };
+		3A231386283677EC0035E342 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A231385283677EC0035E342 /* MainRouter.swift */; };
+		3A23138B2837022F0035E342 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23138A2837022F0035E342 /* UIImageView+Extensions.swift */; };
+		3A23138D28370F7E0035E342 /* HomeContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23138C28370F7E0035E342 /* HomeContentCollectionViewCell.swift */; };
+		3A23138F283927330035E342 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23138E283927330035E342 /* APIManager.swift */; };
+		3A23139228392BA90035E342 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23139128392BA90035E342 /* DetailViewController.swift */; };
+		3A23139428392BC60035E342 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23139328392BC60035E342 /* DetailCoordinator.swift */; };
+		3A231398283A680E0035E342 /* TMDBReviewReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A231397283A680E0035E342 /* TMDBReviewReview.swift */; };
+		3A23139A283A68250035E342 /* TMDBReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A231399283A68250035E342 /* TMDBReviewResult.swift */; };
+		3A23139C283A684F0035E342 /* TMDBReviewAuthorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23139B283A684F0035E342 /* TMDBReviewAuthorDetails.swift */; };
+		3A23139F283A6AA10035E342 /* ReviewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23139E283A6AA10035E342 /* ReviewInfo.swift */; };
+		3A2313A1283BC4320035E342 /* SubtitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2313A0283BC4320035E342 /* SubtitleSupplementaryView.swift */; };
 		3ABB0B3E2831DB3200C187D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B3D2831DB3200C187D2 /* AppDelegate.swift */; };
 		3ABB0B402831DB3200C187D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B3F2831DB3200C187D2 /* SceneDelegate.swift */; };
 		3ABB0B422831DB3200C187D2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B412831DB3200C187D2 /* SplashViewController.swift */; };
@@ -27,9 +42,30 @@
 		3ABB0B732833EF3700C187D2 /* UIPageViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B722833EF3700C187D2 /* UIPageViewController+Extensions.swift */; };
 		3ABB0B762835224500C187D2 /* HomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B752835224500C187D2 /* HomeContentViewController.swift */; };
 		3ABB0B782835228000C187D2 /* HomeContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B772835228000C187D2 /* HomeContentType.swift */; };
+		3ABB0B7A2835250100C187D2 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B792835250100C187D2 /* UICollectionView+Extensions.swift */; };
+		3ABB0B7C2835253C00C187D2 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B7B2835253C00C187D2 /* NSObject+Extensions.swift */; };
+		3ABB0B7E2835637A00C187D2 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B7D2835637A00C187D2 /* TitleSupplementaryView.swift */; };
+		3ABB0B80283563D200C187D2 /* ContentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB0B7F283563D200C187D2 /* ContentSection.swift */; };
+		C612E38C847C045F5C8FD9DC /* Pods_TMDBVirgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAAE5B3E7506A3D47721F94 /* Pods_TMDBVirgo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ABC38191C09E3731D4B5204 /* Pods-TMDBVirgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBVirgo.debug.xcconfig"; path = "Target Support Files/Pods-TMDBVirgo/Pods-TMDBVirgo.debug.xcconfig"; sourceTree = "<group>"; };
+		3A23137B2836748B0035E342 /* HomeContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentViewModel.swift; sourceTree = "<group>"; };
+		3A23137D283674AE0035E342 /* HomeContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentModel.swift; sourceTree = "<group>"; };
+		3A2313802836752C0035E342 /* TMDBResonse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBResonse.swift; sourceTree = "<group>"; };
+		3A231382283675490035E342 /* TMDBResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBResult.swift; sourceTree = "<group>"; };
+		3A231385283677EC0035E342 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		3A23138A2837022F0035E342 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		3A23138C28370F7E0035E342 /* HomeContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A23138E283927330035E342 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3A23139128392BA90035E342 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3A23139328392BC60035E342 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		3A231397283A680E0035E342 /* TMDBReviewReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBReviewReview.swift; sourceTree = "<group>"; };
+		3A231399283A68250035E342 /* TMDBReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBReviewResult.swift; sourceTree = "<group>"; };
+		3A23139B283A684F0035E342 /* TMDBReviewAuthorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBReviewAuthorDetails.swift; sourceTree = "<group>"; };
+		3A23139E283A6AA10035E342 /* ReviewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewInfo.swift; sourceTree = "<group>"; };
+		3A2313A0283BC4320035E342 /* SubtitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleSupplementaryView.swift; sourceTree = "<group>"; };
 		3ABB0B3A2831DB3200C187D2 /* TMDBVirgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDBVirgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABB0B3D2831DB3200C187D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ABB0B3F2831DB3200C187D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +88,12 @@
 		3ABB0B722833EF3700C187D2 /* UIPageViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageViewController+Extensions.swift"; sourceTree = "<group>"; };
 		3ABB0B752835224500C187D2 /* HomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentViewController.swift; sourceTree = "<group>"; };
 		3ABB0B772835228000C187D2 /* HomeContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentType.swift; sourceTree = "<group>"; };
+		3ABB0B792835250100C187D2 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		3ABB0B7B2835253C00C187D2 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		3ABB0B7D2835637A00C187D2 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
+		3ABB0B7F283563D200C187D2 /* ContentSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSection.swift; sourceTree = "<group>"; };
+		DBAAE5B3E7506A3D47721F94 /* Pods_TMDBVirgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDBVirgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95722E75ABDC2E94A82B244 /* Pods-TMDBVirgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBVirgo.release.xcconfig"; path = "Target Support Files/Pods-TMDBVirgo/Pods-TMDBVirgo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +101,94 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C612E38C847C045F5C8FD9DC /* Pods_TMDBVirgo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8EA50C297637F7A5DC8B20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC38191C09E3731D4B5204 /* Pods-TMDBVirgo.debug.xcconfig */,
+				F95722E75ABDC2E94A82B244 /* Pods-TMDBVirgo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3A23137A283674740035E342 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3ABB0B7D2835637A00C187D2 /* TitleSupplementaryView.swift */,
+				3A2313A0283BC4320035E342 /* SubtitleSupplementaryView.swift */,
+				3A23138C28370F7E0035E342 /* HomeContentCollectionViewCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		3A23137F2836751F0035E342 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A231396283A67EA0035E342 /* MovieTV */,
+				3A231395283A67E30035E342 /* Review */,
+				3ABB0B7F283563D200C187D2 /* ContentSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A231384283677D30035E342 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A231385283677EC0035E342 /* MainRouter.swift */,
+				3A23138E283927330035E342 /* APIManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3A23139028392B950035E342 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3A23139128392BA90035E342 /* DetailViewController.swift */,
+				3A23139328392BC60035E342 /* DetailCoordinator.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3A231395283A67E30035E342 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				3A231397283A680E0035E342 /* TMDBReviewReview.swift */,
+				3A231399283A68250035E342 /* TMDBReviewResult.swift */,
+				3A23139B283A684F0035E342 /* TMDBReviewAuthorDetails.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		3A231396283A67EA0035E342 /* MovieTV */ = {
+			isa = PBXGroup;
+			children = (
+				3A2313802836752C0035E342 /* TMDBResonse.swift */,
+				3A231382283675490035E342 /* TMDBResult.swift */,
+			);
+			path = MovieTV;
+			sourceTree = "<group>";
+		};
+		3A23139D283A6A990035E342 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				3A23139E283A6AA10035E342 /* ReviewInfo.swift */,
+			);
+			path = ViewData;
+			sourceTree = "<group>";
+		};
 		3ABB0B312831DB3200C187D2 = {
 			isa = PBXGroup;
 			children = (
 				3ABB0B3C2831DB3200C187D2 /* TMDBVirgo */,
 				3ABB0B3B2831DB3200C187D2 /* Products */,
+				1B8EA50C297637F7A5DC8B20 /* Pods */,
+				A4A4E9168D00D8100BED7425 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +203,8 @@
 		3ABB0B3C2831DB3200C187D2 /* TMDBVirgo */ = {
 			isa = PBXGroup;
 			children = (
+				3A23139D283A6A990035E342 /* ViewData */,
+				3A231384283677D30035E342 /* Service */,
 				3ABB0B59283208AC00C187D2 /* Modules */,
 				3ABB0B562831FAF700C187D2 /* Extensions */,
 				3ABB0B512831F61E00C187D2 /* Coordinator */,
@@ -113,6 +234,9 @@
 				3ABB0B6C2832993C00C187D2 /* UIButton+Extensions.swift */,
 				3ABB0B6E28329B5600C187D2 /* UIControl+Extensions.swift */,
 				3ABB0B722833EF3700C187D2 /* UIPageViewController+Extensions.swift */,
+				3ABB0B792835250100C187D2 /* UICollectionView+Extensions.swift */,
+				3ABB0B7B2835253C00C187D2 /* NSObject+Extensions.swift */,
+				3A23138A2837022F0035E342 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +244,7 @@
 		3ABB0B59283208AC00C187D2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3A23139028392B950035E342 /* Detail */,
 				3ABB0B672832962800C187D2 /* Account */,
 				3ABB0B5D28320A7900C187D2 /* Home */,
 				3ABB0B5A283208B200C187D2 /* Main */,
@@ -160,9 +285,21 @@
 		3ABB0B742835222F00C187D2 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				3A23137F2836751F0035E342 /* Models */,
+				3A23137A283674740035E342 /* Subviews */,
 				3ABB0B752835224500C187D2 /* HomeContentViewController.swift */,
+				3A23137B2836748B0035E342 /* HomeContentViewModel.swift */,
+				3A23137D283674AE0035E342 /* HomeContentModel.swift */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		A4A4E9168D00D8100BED7425 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBAAE5B3E7506A3D47721F94 /* Pods_TMDBVirgo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ABB0B4E2831DB3400C187D2 /* Build configuration list for PBXNativeTarget "TMDBVirgo" */;
 			buildPhases = (
+				76978FEF0C2B9FB9712C9B52 /* [CP] Check Pods Manifest.lock */,
 				3ABB0B362831DB3200C187D2 /* Sources */,
 				3ABB0B372831DB3200C187D2 /* Frameworks */,
 				3ABB0B382831DB3200C187D2 /* Resources */,
+				845DE335AC724094878F8592 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,27 +369,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76978FEF0C2B9FB9712C9B52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMDBVirgo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		845DE335AC724094878F8592 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDBVirgo/Pods-TMDBVirgo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDBVirgo/Pods-TMDBVirgo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDBVirgo/Pods-TMDBVirgo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3ABB0B362831DB3200C187D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A23138B2837022F0035E342 /* UIImageView+Extensions.swift in Sources */,
+				3ABB0B7A2835250100C187D2 /* UICollectionView+Extensions.swift in Sources */,
 				3ABB0B5C283208BF00C187D2 /* MainViewController.swift in Sources */,
 				3ABB0B6D2832993C00C187D2 /* UIButton+Extensions.swift in Sources */,
+				3ABB0B7E2835637A00C187D2 /* TitleSupplementaryView.swift in Sources */,
 				3ABB0B782835228000C187D2 /* HomeContentType.swift in Sources */,
+				3A23137C2836748B0035E342 /* HomeContentViewModel.swift in Sources */,
 				3ABB0B532831F63000C187D2 /* Coordinator.swift in Sources */,
 				3ABB0B692832963700C187D2 /* AccountViewController.swift in Sources */,
+				3A23139428392BC60035E342 /* DetailCoordinator.swift in Sources */,
+				3A231386283677EC0035E342 /* MainRouter.swift in Sources */,
+				3A231398283A680E0035E342 /* TMDBReviewReview.swift in Sources */,
 				3ABB0B422831DB3200C187D2 /* SplashViewController.swift in Sources */,
 				3ABB0B732833EF3700C187D2 /* UIPageViewController+Extensions.swift in Sources */,
+				3A23138F283927330035E342 /* APIManager.swift in Sources */,
 				3ABB0B5F28320AB400C187D2 /* HomeViewController.swift in Sources */,
 				3ABB0B6B2832965100C187D2 /* AccountCoordinator.swift in Sources */,
+				3A23139A283A68250035E342 /* TMDBReviewResult.swift in Sources */,
+				3ABB0B80283563D200C187D2 /* ContentSection.swift in Sources */,
 				3ABB0B552831F66F00C187D2 /* AppCoordinator.swift in Sources */,
+				3A23137E283674AE0035E342 /* HomeContentModel.swift in Sources */,
 				3ABB0B3E2831DB3200C187D2 /* AppDelegate.swift in Sources */,
+				3A23139228392BA90035E342 /* DetailViewController.swift in Sources */,
+				3A2313812836752C0035E342 /* TMDBResonse.swift in Sources */,
 				3ABB0B402831DB3200C187D2 /* SceneDelegate.swift in Sources */,
 				3ABB0B61283238B800C187D2 /* MainCoordinator.swift in Sources */,
+				3A231383283675490035E342 /* TMDBResult.swift in Sources */,
 				3ABB0B582831FB0A00C187D2 /* UIViewConstraint.swift in Sources */,
+				3ABB0B7C2835253C00C187D2 /* NSObject+Extensions.swift in Sources */,
+				3A23139C283A684F0035E342 /* TMDBReviewAuthorDetails.swift in Sources */,
 				3ABB0B6F28329B5600C187D2 /* UIControl+Extensions.swift in Sources */,
 				3ABB0B762835224500C187D2 /* HomeContentViewController.swift in Sources */,
+				3A23138D28370F7E0035E342 /* HomeContentCollectionViewCell.swift in Sources */,
+				3A23139F283A6AA10035E342 /* ReviewInfo.swift in Sources */,
+				3A2313A1283BC4320035E342 /* SubtitleSupplementaryView.swift in Sources */,
 				3ABB0B63283238DC00C187D2 /* TabBarPage.swift in Sources */,
 				3ABB0B65283294E200C187D2 /* HomeCoordinator.swift in Sources */,
 			);
@@ -388,6 +588,7 @@
 		};
 		3ABB0B4F2831DB3400C187D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ABC38191C09E3731D4B5204 /* Pods-TMDBVirgo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,6 +615,7 @@
 		};
 		3ABB0B502831DB3400C187D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95722E75ABDC2E94A82B244 /* Pods-TMDBVirgo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

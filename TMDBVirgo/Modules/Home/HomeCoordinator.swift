@@ -20,6 +20,15 @@ class HomeCoordinator: Coordinator {
         let controller = HomeViewController()
         controller.title = page.pageTitleValue()
         controller.tabBarItem.selectedImage = page.selectedIcon()
+        controller.delegate = self
         self.navigationController.pushViewController(controller, animated: false)
+    }
+}
+
+extension HomeCoordinator: HomeViewDelegate {
+    func didSelect(movie: HomeContentModel) {
+        let detailCoordinator = DetailCoordinator(navigationController: self.navigationController)
+        detailCoordinator.item = movie
+        detailCoordinator.start()
     }
 }

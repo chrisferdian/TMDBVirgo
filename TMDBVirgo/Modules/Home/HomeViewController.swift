@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+protocol HomeViewDelegate: AnyObject {
+    func didSelect(movie: HomeContentModel)
+}
+
 class HomeViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
     
@@ -24,6 +28,7 @@ class HomeViewController: UIViewController {
         font: .systemFont(ofSize: 14, weight: .medium),
         background: #colorLiteral(red: 0.04984010011, green: 0.8574818969, blue: 0.9519322515, alpha: 1)
     )
+    var delegate: HomeViewDelegate?
     var pageController = UIPageViewController(transitionStyle:
                                                 UIPageViewController.TransitionStyle.scroll, navigationOrientation:
                                                 UIPageViewController.NavigationOrientation.horizontal, options: nil)
@@ -34,6 +39,7 @@ class HomeViewController: UIViewController {
         setupStackTab()
         setupTabs()
         setupPageController()
+        configureControllers()
     }
     
     private func setupStackTab() {
@@ -84,19 +90,25 @@ class HomeViewController: UIViewController {
         self.pageController.setViewControllers([orderedViewControllers[0]], direction: .forward, animated: true, completion: nil)
     }
     
-    private(set) lazy var orderedViewControllers: [UIViewController] = {
+    private(set) lazy var orderedViewControllers: [HomeContentViewController] = {
         return [self.newContntViewController(type: .movies), self.newContntViewController(type: .tvShows)]
     }()
     
     
-    private func newContntViewController(type: HomeContentType) -> UIViewController {
+    private func newContntViewController(type: HomeContentType) -> HomeContentViewController {
         return HomeContentViewController(type: type)
+    }
+    
+    private func configureControllers() {
+        orderedViewControllers.forEach { _controller in
+            _controller.delegate = self.delegate
+        }
     }
 }
 
 extension HomeViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-            if let index = orderedViewControllers.firstIndex(of: viewController) {
+        if let index = orderedViewControllers.firstIndex(of: viewController as! HomeContentViewController) {
                 if index > 0 {
                     return orderedViewControllers[index - 1]
                 } else {
@@ -108,7 +120,7 @@ extension HomeViewController: UIPageViewControllerDataSource, UIPageViewControll
         }
 
         func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-            if let index = orderedViewControllers.firstIndex(of: viewController) {
+            if let index = orderedViewControllers.firstIndex(of: viewController as! HomeContentViewController) {
                 if index < orderedViewControllers.count - 1 {
                     return orderedViewControllers[index + 1]
                 } else {
